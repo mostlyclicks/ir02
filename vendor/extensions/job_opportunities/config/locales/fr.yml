@@ -1,0 +1,28 @@
+fr:
+  refinery:
+    plugins:
+      job_opportunities:
+        title: Job Opportunities
+    job_opportunities:
+      admin:
+        job_opportunities:
+          actions:
+            create_new: Créer un(e) nouve(au/l/lle) Job Opportunity
+            reorder: Réordonner les Job Opportunities
+            reorder_done: Fin de réordonnancement des Job Opportunities
+          records:
+            title: Job Opportunities
+            sorry_no_results: "Désolé ! Aucun résultat."
+            no_items_yet: 'Il n''y a actuellement aucun(e) Job Opportunity. Cliquer sur "Créer un(e) nouve(au/l/lle) Job Opportunity" pour créer votre premi(er/ère) job opportunity.'
+          job_opportunity:
+            view_live_html: Voir ce(t/tte) job opportunity <br/><em>(Ouvre une nouvelle fenêtre)</em>
+            edit: Modifier ce(t/tte) job opportunity
+            delete: Supprimer définitivement ce(t/tte) job opportunity
+      job_opportunities:
+        show:
+          other: Autres Job Opportunities
+  activerecord:
+    attributes:
+      'refinery/job_opportunities/job_opportunity':
+        title: Title
+        description: Description

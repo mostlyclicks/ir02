@@ -1,0 +1,28 @@
+nb:
+  refinery:
+    plugins:
+      job_opportunities:
+        title: Job Opportunities
+    job_opportunities:
+      admin:
+        job_opportunities:
+          actions:
+            create_new: Lag en ny Job Opportunity
+            reorder: Endre rekkefølgen på Job Opportunities
+            reorder_done: Ferdig å endre rekkefølgen Job Opportunities
+          records:
+            title: Job Opportunities
+            sorry_no_results: Beklager! Vi fant ikke noen resultater.
+            no_items_yet: Det er ingen Job Opportunities enda. Klikk på "Lag en ny Job Opportunity" for å legge til din første job opportunity.
+          job_opportunity:
+            view_live_html: Vis hvordan denne job opportunity ser ut offentlig <br/><em>(åpner i et nytt vindu)</em>
+            edit: Rediger denne job opportunity
+            delete: Fjern denne job opportunity permanent
+      job_opportunities:
+        show:
+          other: Andre Job Opportunities
+  activerecord:
+    attributes:
+      'refinery/job_opportunities/job_opportunity':
+        title: Title
+        description: Description

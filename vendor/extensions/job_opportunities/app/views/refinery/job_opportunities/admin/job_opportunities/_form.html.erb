@@ -1,0 +1,30 @@
+<%= form_for [refinery, :job_opportunities_admin, @job_opportunity] do |f| -%>
+  <%= render '/refinery/admin/error_messages',
+              :object => @job_opportunity,
+              :include_object_name => true %>
+
+  <div class='field'>
+    <%= f.label :title -%>
+    <%= f.text_field :title, :class => 'larger widest' -%>
+  </div>
+
+  <div class='field'>
+    <%= render '/refinery/admin/wysiwyg',
+                :f => f,
+                :fields => [:description],
+                :object => "job_opportunities/job_opportunity" -%>
+  </div>
+
+  <%= render '/refinery/admin/form_actions', :f => f,
+             :continue_editing => false,
+             :delete_title => t('delete', :scope => 'refinery.job_opportunities.admin.job_opportunities.job_opportunity'),
+             :delete_confirmation => t('message', :scope => 'refinery.admin.delete', :title => @job_opportunity.title) -%>
+<% end -%>
+
+<% content_for :javascripts do -%>
+  <script>
+    $(document).ready(function(){
+      page_options.init(false, '', '');
+    });
+  </script>
+<% end -%>

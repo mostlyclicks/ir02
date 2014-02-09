@@ -1,0 +1,28 @@
+cs:
+  refinery:
+    plugins:
+      job_opportunities:
+        title: Job Opportunities
+    job_opportunities:
+      admin:
+        job_opportunities:
+          actions:
+            create_new: Přidat Job Opportunity
+            reorder: Řadit Job Opportunities
+            reorder_done: Konec řazení Job Opportunities
+          records:
+            title: Job Opportunities
+            sorry_no_results: Litujeme, ale nebyly nalezny žádné výsledky.
+            no_items_yet: Zatím nebyly vytvořeny žádné Job Opportunities. Zvolte "Přidat Job Opportunity" pro přidání prvního job opportunity.
+          job_opportunity:
+            view_live_html: Zobrazit náhled job opportunity<br/><em>(otevře se v novém okně)</em>
+            edit: Upravit job opportunity
+            delete: Smazat job opportunity
+      job_opportunities:
+        show:
+          other: Další Job Opportunities
+  activerecord:
+    attributes:
+      'refinery/job_opportunities/job_opportunity':
+        title: Title
+        description: Description

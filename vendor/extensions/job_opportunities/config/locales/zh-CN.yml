@@ -1,0 +1,30 @@
+zh-CN:
+  refinery:
+    plugins:
+      job_opportunities:
+        title: Job Opportunities
+    job_opportunities:
+      admin:
+        job_opportunities:
+          actions:
+            create_new: 建立新的 Job Opportunity
+            reorder: 对 Job Opportunities 重新排序
+            reorder_done: 对 Job Opportunities 的重新排序结束
+          records:
+            title: Job Opportunities
+            sorry_no_results: 对不起，未找到结果。 #Sorry! There are no results found.
+
+            # There are no Job Opportunities yet. Click "Add New Job Opportunity" to add your first job opportunity.
+            no_items_yet: 目前没有 Job Opportunities . 点击 "Add New Job Opportunity" 创建一个job opportunity.
+          job_opportunity:
+            view_live_html: 查看 job opportunity 的最新内容.<br/><em>(新窗口中打开)</em>
+            edit: 编辑 job opportunity
+            delete: 永久删除 job opportunity
+      job_opportunities:
+        show:
+          other: 其他 Job Opportunities
+  activerecord:
+    attributes:
+      'refinery/job_opportunities/job_opportunity':
+        title: Title
+        description: Description

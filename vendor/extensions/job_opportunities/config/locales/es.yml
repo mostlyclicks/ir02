@@ -1,0 +1,29 @@
+es:
+  refinery:
+    plugins:
+      job_opportunities:
+        title: Job Opportunities
+#        article: masculino/femenino
+    job_opportunities:
+      admin:
+        job_opportunities:
+          actions:
+            create_new: Crear nuevo job opportunity
+            reorder: Reordenar job opportunities
+            reorder_done: Reordenación de job opportunities completada
+          records:
+            title: Job Opportunities
+            sorry_no_results: Lo siento, no hay resultados
+            no_items_yet: No hay job opportunities todavía. Pulsa en "Crear nuevo Job Opportunity" para crear tu primer job opportunity.
+          job_opportunity:
+            view_live_html: Ver este job opportunity como abierto al público <br/><em>(abre en ventana nueva)</em>
+            edit: Editar este job opportunity
+            delete: Borrar este job opportunity para siempre
+      job_opportunities:
+        show:
+          other: Otros job opportunities
+  activerecord:
+    attributes:
+      'refinery/job_opportunities/job_opportunity':
+        title: Title
+        description: Description

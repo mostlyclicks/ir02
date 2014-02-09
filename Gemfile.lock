@@ -3,6 +3,8 @@ PATH
   specs:
     refinerycms-employees (1.0)
       refinerycms-core (~> 2.1.1)
+    refinerycms-job_opportunities (1.0)
+      refinerycms-core (~> 2.1.1)
     refinerycms-products (1.0)
       refinerycms-core (~> 2.1.1)
 
@@ -197,6 +199,7 @@ DEPENDENCIES
   refinerycms (~> 2.1.0)
   refinerycms-acts-as-indexed (~> 1.0.0)
   refinerycms-employees!
+  refinerycms-job_opportunities!
   refinerycms-products!
   sass-rails (~> 3.2.3)
   uglifier (>= 1.0.3)

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20140209215516) do
+ActiveRecord::Schema.define(:version => 20140209220041) do
 
   create_table "refinery_employees", :force => true do |t|
     t.string   "name"
@@ -32,6 +32,14 @@ ActiveRecord::Schema.define(:version => 20140209215516) do
     t.string   "image_uid"
     t.datetime "created_at",      :null => false
     t.datetime "updated_at",      :null => false
+  end
+
+  create_table "refinery_job_opportunities", :force => true do |t|
+    t.string   "title"
+    t.text     "description"
+    t.integer  "position"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
   end
 
   create_table "refinery_page_part_translations", :force => true do |t|

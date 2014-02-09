@@ -1,0 +1,28 @@
+en:
+  refinery:
+    plugins:
+      job_opportunities:
+        title: Job Opportunities
+    job_opportunities:
+      admin:
+        job_opportunities:
+          actions:
+            create_new: Add New Job Opportunity
+            reorder: Reorder Job Opportunities
+            reorder_done: Done Reordering Job Opportunities
+          records:
+            title: Job Opportunities
+            sorry_no_results: Sorry! There are no results found.
+            no_items_yet: There are no Job Opportunities yet. Click "Add New Job Opportunity" to add your first job opportunity.
+          job_opportunity:
+            view_live_html: View this job opportunity live <br/><em>(opens in a new window)</em>
+            edit: Edit this job opportunity
+            delete: Remove this job opportunity forever
+      job_opportunities:
+        show:
+          other: Other Job Opportunities
+  activerecord:
+    attributes:
+      'refinery/job_opportunities/job_opportunity':
+        title: Title
+        description: Description

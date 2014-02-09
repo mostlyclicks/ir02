@@ -1,0 +1,28 @@
+nl:
+  refinery:
+    plugins:
+      job_opportunities:
+        title: Job Opportunities
+    job_opportunities:
+      admin:
+        job_opportunities:
+          actions:
+            create_new: Nieuwe Job Opportunity toevoegen
+            reorder: De volgorde van de Job Opportunities wijzigen
+            reorder_done: Klaar met het wijzingen van de van de Job Opportunity-volgorde
+          records:
+            title: Job Opportunities
+            sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+            no_items_yet: Er zijn nog geen Job Opportunities. Druk op 'Nieuwe Job Opportunity toevoegen' om de eerste toe te voegen.
+          job_opportunity:
+            view_live_html: Deze job opportunity op de website bekijken <br/><em>(opent in een nieuw venster)</em>
+            edit: Bewerk deze job opportunity
+            delete: Deze job opportunity definitief verwijderen
+      job_opportunities:
+        show:
+          other: Andere Job Opportunities
+  activerecord:
+    attributes:
+      'refinery/job_opportunities/job_opportunity':
+        title: Title
+        description: Description

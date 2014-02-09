@@ -50,3 +50,4 @@ gem 'refinerycms-acts-as-indexed', '~> 1.0.0'
 
 gem 'refinerycms-products', :path => 'vendor/extensions'
 gem 'refinerycms-employees', :path => 'vendor/extensions'
+gem 'refinerycms-job_opportunities', :path => 'vendor/extensions'

@@ -1,0 +1,25 @@
+<ul>
+  <% if ::Refinery::JobOpportunities::Admin::JobOpportunitiesController.searchable? %>
+    <li>
+      <%= render '/refinery/admin/search', :url => refinery.job_opportunities_admin_job_opportunities_path %>
+    </li>
+  <% end %>
+  <li>
+    <%= link_to t('.create_new'), refinery.new_job_opportunities_admin_job_opportunity_path,
+                 :class => "add_icon" %>
+  </li>
+<% if !searching? && ::Refinery::JobOpportunities::Admin::JobOpportunitiesController.sortable? && ::Refinery::JobOpportunities::JobOpportunity.many? %>
+  <li>
+    <%= link_to t('.reorder', :what => "Job Opportunities"),
+                 refinery.job_opportunities_admin_job_opportunities_path,
+                 :id => "reorder_action",
+                 :class => "reorder_icon" %>
+
+    <%= link_to t('.reorder_done', :what => "Job Opportunities"),
+                 refinery.job_opportunities_admin_job_opportunities_path,
+                 :id => "reorder_action_done",
+                 :style => "display: none;",
+                 :class => "reorder_icon" %>
+  </li>
+<% end %>
+</ul>

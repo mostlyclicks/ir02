@@ -1,0 +1,28 @@
+tr:
+  refinery:
+    plugins:
+      job_opportunities:
+        title: Job Opportunities
+    job_opportunities:
+      admin:
+        job_opportunities:
+          actions:
+            create_new: Yeni Ekle Job Opportunity
+            reorder: Tekrar sirala Job Opportunities
+            reorder_done: Tekrar siralama tamamlandiJob Opportunities
+          records:
+            title: Job Opportunities
+            sorry_no_results: Uzgunum! Herhangi bir sonuc bulunamadi.
+            no_items_yet: Herhangi bir Job Opportunities yok henuz.  Tikla "Yeni Ekle Job Opportunity" eklemek senin ilk job opportunity.
+          job_opportunity:
+            view_live_html: Bunu canlu job opportunity goruntule <br/><em>(yeni bir pencerede acar)</em>
+            edit: Bunu Duzenle job opportunity
+            delete: Bunu Sil job opportunity sonsuza dek
+      job_opportunities:
+        show:
+          other: Diger Job Opportunities
+  activerecord:
+    attributes:
+      'refinery/job_opportunities/job_opportunity':
+        title: Title
+        description: Description
