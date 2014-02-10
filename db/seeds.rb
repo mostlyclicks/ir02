@@ -17,3 +17,6 @@ Refinery::Employees::Engine.load_seed
 
 # Added by Refinery CMS JobOpportunities extension
 Refinery::JobOpportunities::Engine.load_seed
+
+# Added by Refinery CMS CaseStudies extension
+Refinery::CaseStudies::Engine.load_seed

@@ -1,0 +1,34 @@
+en:
+  refinery:
+    plugins:
+      case_studies:
+        title: Case Studies
+    case_studies:
+      admin:
+        case_studies:
+          actions:
+            create_new: Add New Case Study
+            reorder: Reorder Case Studies
+            reorder_done: Done Reordering Case Studies
+          records:
+            title: Case Studies
+            sorry_no_results: Sorry! There are no results found.
+            no_items_yet: There are no Case Studies yet. Click "Add New Case Study" to add your first case study.
+          case_study:
+            view_live_html: View this case study live <br/><em>(opens in a new window)</em>
+            edit: Edit this case study
+            delete: Remove this case study forever
+      case_studies:
+        show:
+          other: Other Case Studies
+  activerecord:
+    attributes:
+      'refinery/case_studies/case_study':
+        title: Title
+        client: Client
+        testimonial: Testimonial
+        hero_image: Hero Image
+        before_image: Before Image
+        after_image: After Image
+        description: Description
+        case_study_pdf: Case Study Pdf

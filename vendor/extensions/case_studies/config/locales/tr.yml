@@ -1,0 +1,34 @@
+tr:
+  refinery:
+    plugins:
+      case_studies:
+        title: Case Studies
+    case_studies:
+      admin:
+        case_studies:
+          actions:
+            create_new: Yeni Ekle Case Study
+            reorder: Tekrar sirala Case Studies
+            reorder_done: Tekrar siralama tamamlandiCase Studies
+          records:
+            title: Case Studies
+            sorry_no_results: Uzgunum! Herhangi bir sonuc bulunamadi.
+            no_items_yet: Herhangi bir Case Studies yok henuz.  Tikla "Yeni Ekle Case Study" eklemek senin ilk case study.
+          case_study:
+            view_live_html: Bunu canlu case study goruntule <br/><em>(yeni bir pencerede acar)</em>
+            edit: Bunu Duzenle case study
+            delete: Bunu Sil case study sonsuza dek
+      case_studies:
+        show:
+          other: Diger Case Studies
+  activerecord:
+    attributes:
+      'refinery/case_studies/case_study':
+        title: Title
+        client: Client
+        testimonial: Testimonial
+        hero_image: Hero Image
+        before_image: Before Image
+        after_image: After Image
+        description: Description
+        case_study_pdf: Case Study Pdf

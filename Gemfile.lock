@@ -1,6 +1,8 @@
 PATH
   remote: vendor/extensions
   specs:
+    refinerycms-case_studies (1.0)
+      refinerycms-core (~> 2.1.1)
     refinerycms-employees (1.0)
       refinerycms-core (~> 2.1.1)
     refinerycms-job_opportunities (1.0)
@@ -198,6 +200,7 @@ DEPENDENCIES
   rails (= 3.2.15)
   refinerycms (~> 2.1.0)
   refinerycms-acts-as-indexed (~> 1.0.0)
+  refinerycms-case_studies!
   refinerycms-employees!
   refinerycms-job_opportunities!
   refinerycms-products!

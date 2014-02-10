@@ -1,0 +1,34 @@
+nl:
+  refinery:
+    plugins:
+      case_studies:
+        title: Case Studies
+    case_studies:
+      admin:
+        case_studies:
+          actions:
+            create_new: Nieuwe Case Study toevoegen
+            reorder: De volgorde van de Case Studies wijzigen
+            reorder_done: Klaar met het wijzingen van de van de Case Study-volgorde
+          records:
+            title: Case Studies
+            sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+            no_items_yet: Er zijn nog geen Case Studies. Druk op 'Nieuwe Case Study toevoegen' om de eerste toe te voegen.
+          case_study:
+            view_live_html: Deze case study op de website bekijken <br/><em>(opent in een nieuw venster)</em>
+            edit: Bewerk deze case study
+            delete: Deze case study definitief verwijderen
+      case_studies:
+        show:
+          other: Andere Case Studies
+  activerecord:
+    attributes:
+      'refinery/case_studies/case_study':
+        title: Title
+        client: Client
+        testimonial: Testimonial
+        hero_image: Hero Image
+        before_image: Before Image
+        after_image: After Image
+        description: Description
+        case_study_pdf: Case Study Pdf

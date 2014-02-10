@@ -1,0 +1,34 @@
+fr:
+  refinery:
+    plugins:
+      case_studies:
+        title: Case Studies
+    case_studies:
+      admin:
+        case_studies:
+          actions:
+            create_new: Créer un(e) nouve(au/l/lle) Case Study
+            reorder: Réordonner les Case Studies
+            reorder_done: Fin de réordonnancement des Case Studies
+          records:
+            title: Case Studies
+            sorry_no_results: "Désolé ! Aucun résultat."
+            no_items_yet: 'Il n''y a actuellement aucun(e) Case Study. Cliquer sur "Créer un(e) nouve(au/l/lle) Case Study" pour créer votre premi(er/ère) case study.'
+          case_study:
+            view_live_html: Voir ce(t/tte) case study <br/><em>(Ouvre une nouvelle fenêtre)</em>
+            edit: Modifier ce(t/tte) case study
+            delete: Supprimer définitivement ce(t/tte) case study
+      case_studies:
+        show:
+          other: Autres Case Studies
+  activerecord:
+    attributes:
+      'refinery/case_studies/case_study':
+        title: Title
+        client: Client
+        testimonial: Testimonial
+        hero_image: Hero Image
+        before_image: Before Image
+        after_image: After Image
+        description: Description
+        case_study_pdf: Case Study Pdf

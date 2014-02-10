@@ -11,7 +11,21 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20140209220041) do
+ActiveRecord::Schema.define(:version => 20140209221838) do
+
+  create_table "refinery_case_studies", :force => true do |t|
+    t.string   "title"
+    t.string   "client"
+    t.text     "testimonial"
+    t.integer  "hero_image_id"
+    t.integer  "before_image_id"
+    t.integer  "after_image_id"
+    t.text     "description"
+    t.integer  "case_study_pdf_id"
+    t.integer  "position"
+    t.datetime "created_at",        :null => false
+    t.datetime "updated_at",        :null => false
+  end
 
   create_table "refinery_employees", :force => true do |t|
     t.string   "name"

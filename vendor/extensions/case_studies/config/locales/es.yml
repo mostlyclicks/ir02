@@ -1,0 +1,35 @@
+es:
+  refinery:
+    plugins:
+      case_studies:
+        title: Case Studies
+#        article: masculino/femenino
+    case_studies:
+      admin:
+        case_studies:
+          actions:
+            create_new: Crear nuevo case study
+            reorder: Reordenar case studies
+            reorder_done: Reordenación de case studies completada
+          records:
+            title: Case Studies
+            sorry_no_results: Lo siento, no hay resultados
+            no_items_yet: No hay case studies todavía. Pulsa en "Crear nuevo Case Study" para crear tu primer case study.
+          case_study:
+            view_live_html: Ver este case study como abierto al público <br/><em>(abre en ventana nueva)</em>
+            edit: Editar este case study
+            delete: Borrar este case study para siempre
+      case_studies:
+        show:
+          other: Otros case studies
+  activerecord:
+    attributes:
+      'refinery/case_studies/case_study':
+        title: Title
+        client: Client
+        testimonial: Testimonial
+        hero_image: Hero Image
+        before_image: Before Image
+        after_image: After Image
+        description: Description
+        case_study_pdf: Case Study Pdf

@@ -1,67 +1,169 @@
 $font-sans: helvetica neue,helvetica, arial, sans-serif;
+$font-main: 'Roboto Slab', serif;
 $gray: #3f423b;
 $sky: #7f9da7;
 $white: #ffffff;
+$trans-white:rgba(255,255,255,.7);
+$brand-green:rgba(29,131,12,1);
+$lime :#ccff99;
+$trans-brand-green:rgba(29,131,12,.3);
+$black:#000000;
 
-
-body {
-	/* padding-top:26px;for top fixed nav*/
+@mixin rotate($degree) {
+  transform:rotate($degree);
+  -ms-transform:rotate($degree); /* IE 9 */
+  -webkit-transform:rotate($degree); /* Safari and Chrome */
 }
 
-
-
-#logo {
-  padding-top:120px;
-  font-family:$font-sans;
-  font-weight:100;
-  color:#ffffff;
-  font-size:5em;
-}
-
-p {
-  font-family:$font-sans;
-  font-weight:400;
-}
-
-#section-1 {
-  background-color:lighten($sky, 10%);
-  margin-top:-26px;
-  min-height:250px;
-  padding:2em 0 2em 0;
-  color:#ffffff;
-  h3 {
-    font-family:$font-sans;
-    font-weight:100;
-    letter-spacing:.80px ;
-  }
-  p {
-    line-height: 1.55em;
-    font-weight:300;
-  }
-}
-
-#section-2 {
-  background-image:url('sunrise.jpg');
-  background-position-y:90%;
-  background-position-x:50%;
-  min-height:600px;
+#top {
+  min-height:420px;
+  margin-top:-21px;
+  background-image:url('SLwValley-before.jpg');
   background-repeat:no-repeat;
+  background-color:darken($white, 3%);
+  border-top:8px solid darken($trans-brand-green, 10%);
   
-  p {
-    padding:2em 0;
-    font-family:$font-sans;
-    font-weight:100;
-    font-size:3em;
-    line-height:1.20em;
+  h1 {
+    padding-top:2em;
+    font-weight:normal;
+    color:$white;
+    font-family: 'Roboto Slab', serif;
+    text-shadow:1px 1px 1px black;
+  }
+
+  h3 {
+    color:lighten($black, 20%);
+    margin-top:1.5em;
+
+  }
+  .rline {
+    height:400px;
+  }
+
+}
+
+.home-image {
+  margin-top: 20px;
+  @include rotate(0deg);
+  border:8px solid rgba(255,255,255, .4);
+  width:100%;
+  box-shadow: 1px 0px 10px 1px rgba(0,0,0, .2);
+}
+
+#mid {
+  margin-top:20px;
+  min-height:180px;
+
+  a h3 {
+    margin-top:115px;
+    padding:15px;
+    background-color:lighten($black, 30%);
+    
+    width:60%;
+    border-right:2px solid $white;
+    font-size:18px;
+    color:$lime;
+    font-family:$font-main;
+ 
+  }
+  #services {
+    border:1px solid $white;
+    min-height:180px;
+    background:url('home-services.jpg') center center no-repeat;
+    background-size:cover;
+  }
+  #testimonials {
+    border:1px solid $white;
+    min-height:180px;
+    background:url('home-testimonials.jpg') center center no-repeat;
+    background-size:cover;
+  }
+  #jobs {
+    border:1px solid $white;
+    min-height:180px;
+    background:url('home-jobs.jpg') center center no-repeat;
+    background-size:cover;
   }
 }
+
 
 #footer {
-  padding:2em 0;
-  background-color:#000000;
-  color:darken($white, 65%);
-  li {
-    list-style-type: none;
-    margin-left:0;
-  }
+  border-top:1px dotted lighten($black, 83%);
+  margin-top:40px;
+  padding:40px;
+  background-color:lighten($black, 99%);
+  font-family:$font-main;
+} li {
+  list-style:none;
+
+} 
+
+#copyright {
+  color:lighten($black, 70%);
 }
+
+
+
+
+
+// body {
+// 	/* padding-top:26px;for top fixed nav*/
+// }
+
+
+
+// #logo {
+//   padding-top:120px;
+//   font-family:$font-sans;
+//   font-weight:100;
+//   color:#ffffff;
+//   font-size:5em;
+// }
+
+// p {
+//   font-family:$font-sans;
+//   font-weight:400;
+// }
+
+// #section-1 {
+//   background-color:lighten($sky, 10%);
+//   margin-top:-26px;
+//   min-height:250px;
+//   padding:2em 0 2em 0;
+//   color:#ffffff;
+//   h3 {
+//     font-family:$font-sans;
+//     font-weight:100;
+//     letter-spacing:.80px ;
+//   }
+//   p {
+//     line-height: 1.55em;
+//     font-weight:300;
+//   }
+// }
+
+// #section-2 {
+//   background-image:url('sunrise.jpg');
+//   background-position-y:90%;
+//   background-position-x:50%;
+//   min-height:600px;
+//   background-repeat:no-repeat;
+  
+//   p {
+//     padding:2em 0;
+//     font-family:$font-sans;
+//     font-weight:100;
+//     font-size:3em;
+//     line-height:1.20em;
+//   }
+// }
+
+// #footer {
+//   padding:2em 0;
+//   background-color:#000000;
+//   color:darken($white, 65%);
+//   li {
+//     list-style-type: none;
+//     margin-left:0;
+//   }
+// }

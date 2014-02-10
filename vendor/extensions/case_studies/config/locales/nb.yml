@@ -1,0 +1,34 @@
+nb:
+  refinery:
+    plugins:
+      case_studies:
+        title: Case Studies
+    case_studies:
+      admin:
+        case_studies:
+          actions:
+            create_new: Lag en ny Case Study
+            reorder: Endre rekkefølgen på Case Studies
+            reorder_done: Ferdig å endre rekkefølgen Case Studies
+          records:
+            title: Case Studies
+            sorry_no_results: Beklager! Vi fant ikke noen resultater.
+            no_items_yet: Det er ingen Case Studies enda. Klikk på "Lag en ny Case Study" for å legge til din første case study.
+          case_study:
+            view_live_html: Vis hvordan denne case study ser ut offentlig <br/><em>(åpner i et nytt vindu)</em>
+            edit: Rediger denne case study
+            delete: Fjern denne case study permanent
+      case_studies:
+        show:
+          other: Andre Case Studies
+  activerecord:
+    attributes:
+      'refinery/case_studies/case_study':
+        title: Title
+        client: Client
+        testimonial: Testimonial
+        hero_image: Hero Image
+        before_image: Before Image
+        after_image: After Image
+        description: Description
+        case_study_pdf: Case Study Pdf

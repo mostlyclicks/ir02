@@ -1,0 +1,36 @@
+zh-CN:
+  refinery:
+    plugins:
+      case_studies:
+        title: Case Studies
+    case_studies:
+      admin:
+        case_studies:
+          actions:
+            create_new: 建立新的 Case Study
+            reorder: 对 Case Studies 重新排序
+            reorder_done: 对 Case Studies 的重新排序结束
+          records:
+            title: Case Studies
+            sorry_no_results: 对不起，未找到结果。 #Sorry! There are no results found.
+
+            # There are no Case Studies yet. Click "Add New Case Study" to add your first case study.
+            no_items_yet: 目前没有 Case Studies . 点击 "Add New Case Study" 创建一个case study.
+          case_study:
+            view_live_html: 查看 case study 的最新内容.<br/><em>(新窗口中打开)</em>
+            edit: 编辑 case study
+            delete: 永久删除 case study
+      case_studies:
+        show:
+          other: 其他 Case Studies
+  activerecord:
+    attributes:
+      'refinery/case_studies/case_study':
+        title: Title
+        client: Client
+        testimonial: Testimonial
+        hero_image: Hero Image
+        before_image: Before Image
+        after_image: After Image
+        description: Description
+        case_study_pdf: Case Study Pdf
