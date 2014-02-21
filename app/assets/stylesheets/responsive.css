@@ -1,0 +1,53 @@
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+  /*body {border:4px solid red;}*/
+  #top h1 {font-size:26px;}
+  #top h3 {font-size:19px;}
+ }
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+  /*body {border:4px solid blue;}*/
+  #top h1 {font-size:26px;}
+  #top h3 {font-size:19px;}
+  #top .top-content {
+    background:rgba(0,0,0, .5);padding:10px 0 20px 0;
+    height:210px;
+  }
+
+  blockquote {
+    font-size:20px;
+    letter-spacing: 1px;
+  }
+
+  blockquote em {
+    font-size:15px;
+    font-weight:200;
+  }
+
+
+ }
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+  /*body {border:4px solid yellow;}*/
+  #top h1 {font-size:36px;}
+  #top h3 {font-size:19px;}
+  #top .top-content {
+    background:rgba(0,0,0, .5);padding:10px 0 20px 0;
+    height:210px;
+  }
+
+    blockquote {
+    font-size:20px;
+    letter-spacing: 1px;
+  }
+
+  blockquote em {
+    font-size:15px;
+    font-weight:200;
+  }
+ }

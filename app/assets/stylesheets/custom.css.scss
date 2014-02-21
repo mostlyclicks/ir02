@@ -5,7 +5,7 @@ $sky: #7f9da7;
 $white: #ffffff;
 $trans-white:rgba(255,255,255,.7);
 $brand-green:rgba(29,131,12,1);
-$lime :#ccff99;
+$lime :#acd373;
 $trans-brand-green:rgba(29,131,12,.3);
 $black:#000000;
 
@@ -15,42 +15,70 @@ $black:#000000;
   -webkit-transform:rotate($degree); /* Safari and Chrome */
 }
 
+blockquote {
+  border-left:none;
+  font-family:$font-sans;
+  font-weight:100;
+  font-size:24px;
+  letter-spacing: 1px;
+
+  em {
+    font-size:18px;
+    font-weight:200;
+  }
+}
+
+#header {
+  position:relative;
+  border-top:8px solid darken($lime, 10%);
+  height:72px;
+  padding-top:6px;
+  background-color:rgba(0,0,0,.8);
+   z-index:100;
+}
+
  #navbar_nobg {
    position:relative;
    font-family:$font-main;
  }
+
  img {
    position:absolute;
-   top:-5px;
+   top:10px;
    left:0;
    box-shadow: 1px 0px 10px 1px rgba(0,0,0, .2);
-   border-right:3px solid $brand-green;
-   border-left:3px solid $brand-green;
-   border-bottom:3px solid $brand-green;
-   border-bottom-left-radius:10px;
-   border-bottom-right-radius:10px;
+   // border:6px solid rgba(0,0,0,.4);
+   // border-right:3px solid $brand-green;
+   // border-left:3px solid $brand-green;
+   // border-bottom:3px solid $brand-green;
+   // border-bottom-left-radius:10px;
+   // border-bottom-right-radius:10px;
  } 
  .navbar-brand {
-   position:absolute;
-   left:50px;
-   padding-left:2em;
+   
+ 
  }
 
+
 #top {
-  min-height:420px;
-  margin-top:-21px;
-  background-image:url('dry-prairie2.jpg');
+  min-height:600px;
+  margin-top:-73px;
+  background-image:url('SedgeMeadow-AFTER2.jpg');
+  background-position-x:50%;
+  // background-position-y:50%;
   background-repeat:no-repeat;
-  background-color:darken($white, 3%);
-  border-top:8px solid darken($trans-brand-green, 10%);
+  background-color:darken($white, 4%);
+  
   border-bottom:1px dotted lighten($black, 83%);
+  padding-top:210px;
   
   h1 {
-    padding-top:2em;
+    // margin-top:2.35em;
     font-weight:normal;
     color:$white;
     font-family: 'Roboto Slab', serif;
     text-shadow:1px 1px 1px black;
+    
   }
 
   h3 {
@@ -66,22 +94,33 @@ $black:#000000;
 }
 
 .home-image {
-  margin-top: 20px;
+  margin-top:-9px;
+  padding-top:0;
   margin-left:-15px;
   @include rotate(0deg);
-  border:8px solid rgba(255,255,255, .4);
-  width:100%;
-  box-shadow: 1px 0px 10px 1px rgba(0,0,0, .2);
+  border:none;
+  
+  height:300px;
+  box-shadow: none;
+}
+
+.navbar {
+ 
 }
 
 .navbar li a {
-  color:darken($brand-green, 5%);
+  color:$white;
+  font-size:15px;
+  &:hover {
+    background-color:lighten($lime, 20%);
+    color:black;
+  }
 }
 
-a {color:darken($brand-green, 5%);}
+a {color:$white;}
 
 #mid {
-  margin-top:40px;
+  margin-top:0px;
   min-height:180px;
 
   a h3 {
