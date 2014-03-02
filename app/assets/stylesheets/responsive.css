@@ -3,17 +3,26 @@
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) { 
-  /*body {border:4px solid red;}*/
+  body {border:4px solid red;}
 
   #top h1 {font-size:26px;}
   #top h3 {font-size:19px;}
   #header{height:72px !important;}
   .top-content {margin-top:20px;}
+  #l2-logo {
+    position:relative;
+  }
+  #l2-logo img {
+    width:50px;
+    position:absolute;
+    top:-50px !important;
+  }
+
  }
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
-  /*body {border:4px solid blue;}*/
+  body {border:4px solid blue;}
   #top {height:400px;padding-top:100px !important;}
   #top {background-position-y:60%;} 
   #top h1 {font-size:26px;}
@@ -35,12 +44,25 @@
     font-weight:200;
   }
 
+    #l2-logo {
+    position:relative;
+  
+  }
+  #l2-logo img {
+
+      position:absolute;
+      width:70px !important;
+      top:-50px;
+      left:0px;
+      z-index:120;
+  }
+
 
  }
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) { 
-  /*body {border:4px solid yellow;}*/
+  body {border:4px solid yellow;}
   #top {height:580px;padding-top:130px !important;}
   #top h1 {font-size:36px !important;}
   #top h3 {font-size:24px !important;}
@@ -59,4 +81,11 @@
     font-size:15px;
     font-weight:200;
   }
+
+  .navbar-brand {
+    margin-left:70px;
+  }
+  a.navbar-brand:hover {color:#acd373;}
+
+
  }
