@@ -1,103 +1,43 @@
-<style>
-.rline {border:1px solid red;}
-</style>
-
 <div id="top" class="">
-  <div class="container" style="padding-bottom:20px;height:420px;">
+  <div class="container" >
     <div class="row">
-      
-      <div class="col-md-8 col-sm-12 col-xs-12 top-content" style="">
-          <div class="col-md-3 col-sm-3 col-xs-12"><%= image_tag 'logo6.png', class: 'img-responsive', style: 'margin-top:15px;margin-left:58px;margin-right:0;' %> </div>
-          <div class="col-md-9 col-sm-9 hidden-xs"><h1>Welcome to <br />Integrated Restorations, LLC</h1>
-                <h3>Ecological management for communities, organizations and land owners.</h3></div>
+
+      <div class="col-md-8 col-sm-12 col-xs-12 top-content">
+        <div class="col-md-2 col-sm-2 col-sm-offset-1 col-xs-2">
+          <%= image_tag 'logo6.png', class: 'img-responsive', id: 'logo' %>
+        </div>
+        <div class="col-md-9 col-sm-8 col-xs-10", id: 'welcome' >
+          <h1>Welcome to <br />Integrated Restorations, LLC</h1>
+          <h3>Ecological management for communities, organizations and land owners.</h3>
+        </div>
       </div>
-      <div class="col-md-4 col-sm-12 hidden-xs" style="background-color:#acd373;min-height:210px;">
-          <blockquote>“What was unusable acreage is now thriving and profitable thanks to the work of Integrated Restorations.“ <br /><em>&mdash; John Smith, Smith Developments</em></blockquote>
+
+      <div class="col-md-4 col-sm-12 col-xs-12 home-quote">
+        <blockquote>“What was unusable acreage is now thriving and profitable thanks to the work of Integrated Restorations.“ <br /><em>&mdash; John Smith, Smith Developments</em></blockquote>
       </div>
-     <!--  <div class="col-md-6 hidden-sm hidden-xs">
-        <%#= image_tag 'SLwValley-after.jpg', class: 'img-responsive home-image'  %>
-      </div> -->
+
     </div>
   </div>
 </div>
-
 
 <div id="mid">
   <div class="container">
     <div class="row">
+
       <div class="col-md-4" id="services">
         <a href="#"><h3>Services</h3></a>
       </div>
+
       <div class="col-md-4" id="testimonials">
         <a href="#"><h3>Testimonials</h3></a>
-
       </div>
+
       <div class="col-md-4" id="jobs">
         <a href="#"><h3>Job Opportunities</h3></a>
-
       </div>
 
-
-    </div>
-
-
-  </div>
-
-
-</div>
-
-
-<!-- 
-<div id="hero-image">
-  <div class="container">
-    <div class="row">
-      <h1 id='logo'>
-        <%= link_to Refinery::Core.site_name, refinery.root_path %>
-      </h1>
     </div>
   </div>
 </div>
-
-<div id="section-1">
-  <div class="container">
-    <div class="row">
-      <%#= render '/refinery/content_page' %>
-      <div class="col-md-4">
-        <h3>Driving through fog</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-        quis nostrud exercitation ullamco</p>
-      </div>
-      <div class="col-md-4">
-        <h3>Driving through fog</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-        quis nostrud exercitation ullamco</p>
-      </div>
-      <div class="col-md-4">
-        <h3>Driving through fog</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-        quis nostrud exercitation ullamco</p>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-<div id="section-2">
-  <div class="container">
-    <div class="row">
-      <%#= render '/refinery/content_page' %>
-      
-      <div class="col-md-6 col-md-offset-6">
-        
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-        quis nostrud exercitation ullamco</p>
-      </div>
-    </div>
-  </div>
-</div> -->
 
 

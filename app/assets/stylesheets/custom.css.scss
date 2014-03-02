@@ -15,12 +15,91 @@ $black:#000000;
   -webkit-transform:rotate($degree); /* Safari and Chrome */
 }
 
-blockquote {
+#header {
+  position:relative;
+  border-top:8px solid darken($lime, 10%);
+  height:51px;
+  padding-top:6px;
+  background-color:rgba(0,0,0,.8);
+   z-index:100;
+}
+
+#navbar_nobg {
+   position:relative;
+   font-family:$font-main;
+}
+
+ img {
+   position:absolute;
+   top:10px;
+   left:0;
+   box-shadow: 1px 0px 10px 1px rgba(0,0,0, .2);
+
+ } 
+ .navbar-brand {
+ }
+
+.top-content {
+  background-color:rgba(0,0,0,.4);
+  padding-bottom:15px;
+
+}
+
+
+#top {
+  
+  margin-top:0px;
+  background-image:url('SedgeMeadow-AFTER2.jpg');
+  background-position-x:50%;
+  background-position-y:50%;
+  border-bottom:20px solid rgba(255,255,255, .7);
+  
+  background-repeat:no-repeat;
+  background-color:darken($white, 4%);
+  
+  // border-bottom:1px dotted lighten($black, 83%);
+  padding-top:0px;
+  
+    h1 {
+      margin-top:24px;
+      font-weight:normal;
+      color:$white;
+      font-family: 'Roboto Slab', serif;
+      text-shadow:1px 1px 1px black;
+      font-size:20px;
+
+    }
+    h3 {
+      color:darken($white, 0%);
+      font-weight:200;
+      font-size:18px;
+    }
+    .rline {
+      height:400px;
+    }
+    #logo {
+    // margin-top:15px;
+    // margin-left:58px;
+    // margin-right:0;
+    // margin:0px auto 0 auto !important; 
+    // border:1px solid red;
+    }
+
+}
+
+.home-quote {
+  
+}
+
+.home-quote blockquote {
   border-left:none;
   font-family:$font-sans;
   font-weight:100;
   font-size:24px;
   letter-spacing: 1px;
+  background-color:#acd373;
+  margin-top:20px;
+  border-radius:5px;
 
   em {
     font-size:18px;
@@ -28,70 +107,7 @@ blockquote {
   }
 }
 
-#header {
-  position:relative;
-  border-top:8px solid darken($lime, 10%);
-  height:72px;
-  padding-top:6px;
-  background-color:rgba(0,0,0,.8);
-   z-index:100;
-}
 
- #navbar_nobg {
-   position:relative;
-   font-family:$font-main;
- }
-
- img {
-   position:absolute;
-   top:10px;
-   left:0;
-   box-shadow: 1px 0px 10px 1px rgba(0,0,0, .2);
-   // border:6px solid rgba(0,0,0,.4);
-   // border-right:3px solid $brand-green;
-   // border-left:3px solid $brand-green;
-   // border-bottom:3px solid $brand-green;
-   // border-bottom-left-radius:10px;
-   // border-bottom-right-radius:10px;
- } 
- .navbar-brand {
-   
- 
- }
-
-
-#top {
-  min-height:600px;
-  margin-top:-73px;
-  background-image:url('SedgeMeadow-AFTER2.jpg');
-  background-position-x:50%;
-  // background-position-y:50%;
-  background-repeat:no-repeat;
-  background-color:darken($white, 4%);
-  
-  border-bottom:1px dotted lighten($black, 83%);
-  padding-top:210px;
-  
-  h1 {
-    // margin-top:2.35em;
-    font-weight:normal;
-    color:$white;
-    font-family: 'Roboto Slab', serif;
-    text-shadow:1px 1px 1px black;
-    
-  }
-
-  h3 {
-    color:darken($white, 0%);
-    font-weight:200;
-    
-
-  }
-  .rline {
-    height:400px;
-  }
-
-}
 
 .home-image {
   margin-top:-9px;
@@ -120,7 +136,8 @@ blockquote {
 a {color:$white;}
 
 #mid {
-  margin-top:0px;
+
+  margin-top:20px;
   min-height:180px;
 
   a h3 {
