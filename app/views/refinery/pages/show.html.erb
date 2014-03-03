@@ -18,6 +18,10 @@
     <div class="col-md-8">
       <%= image_tag 'sunrise.jpg', class: 'img-responsive' %>
       <%= @page.content_for(:body).html_safe %>
+      <%= raw @page.content_for(:section1) %>
+      <%= raw @page.content_for(:section2) %>
+      <%= raw @page.content_for(:section3) %>
+      <%= raw @page.content_for(:section4) %>
     </div>
 
     <div class="col-md-4">
@@ -28,6 +32,5 @@
       </div>
       <%#= image_tag 'http://placehold.it/400x300' %>
     </div>
-    <%#= render '/refinery/content_page' %>
   </div>  
 </div>
