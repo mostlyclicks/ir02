@@ -9,6 +9,8 @@ PATH
       refinerycms-core (~> 2.1.1)
     refinerycms-products (1.0)
       refinerycms-core (~> 2.1.1)
+    refinerycms-testimonials (1.0)
+      refinerycms-core (~> 2.1.1)
 
 GEM
   remote: https://rubygems.org/
@@ -222,5 +224,6 @@ DEPENDENCIES
   refinerycms-employees!
   refinerycms-job_opportunities!
   refinerycms-products!
+  refinerycms-testimonials!
   sass-rails (~> 3.2.3)
   uglifier (>= 1.0.3)
