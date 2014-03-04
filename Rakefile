@@ -4,4 +4,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-Virq10Work::Application.load_tasks
+Ir02::Application.load_tasks
