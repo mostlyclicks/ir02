@@ -23,3 +23,6 @@ Refinery::CaseStudies::Engine.load_seed
 
 # Added by Refinery CMS Testimonials extension
 Refinery::Testimonials::Engine.load_seed
+
+# Added by Refinery CMS Inquiries engine
+Refinery::Inquiries::Engine.load_seed

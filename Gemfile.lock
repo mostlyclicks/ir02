@@ -69,6 +69,7 @@ GEM
     erubis (2.7.0)
     excon (0.31.0)
     execjs (2.0.2)
+    filters_spam (0.3)
     fog (1.20.0)
       builder
       excon (~> 0.31.0)
@@ -170,6 +171,10 @@ GEM
     refinerycms-images (2.1.1)
       dragonfly (~> 0.9.14)
       refinerycms-core (= 2.1.1)
+    refinerycms-inquiries (2.1.0)
+      filters_spam (~> 0.2)
+      refinerycms-core (~> 2.1.0)
+      refinerycms-settings (~> 2.1.0)
     refinerycms-pages (2.1.1)
       awesome_nested_set (~> 2.1.3)
       babosa (!= 0.3.6)
@@ -181,6 +186,8 @@ GEM
       acts_as_indexed (~> 0.8.0)
       dragonfly (~> 0.9.12)
       refinerycms-core (= 2.1.1)
+    refinerycms-settings (2.1.1)
+      refinerycms-core (~> 2.1.1)
     routing-filter (0.3.1)
       actionpack
     sass (3.2.13)
@@ -222,6 +229,7 @@ DEPENDENCIES
   refinerycms-acts-as-indexed (~> 1.0.0)
   refinerycms-case_studies!
   refinerycms-employees!
+  refinerycms-inquiries (~> 2.1.0)
   refinerycms-job_opportunities!
   refinerycms-products!
   refinerycms-testimonials!
