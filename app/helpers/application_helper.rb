@@ -11,7 +11,7 @@ module ApplicationHelper
     presenter = Refinery::Pages::MenuPresenter.new(refinery_menu_pages, self)
     presenter.menu_tag = "div class=\"collapse navbar-collapse\" id=\"main-nav-collapse\""
     presenter.list_tag = "ul class=\"nav navbar-nav pull-right pull-left-xs\""
-    presenter.max_depth = 2
+    presenter.max_depth = 0
     presenter
   end
 
@@ -45,7 +45,7 @@ module ApplicationHelper
     # presenter.css = "#{style}"
     presenter.list_tag = "ul class=\"nav nav-pills nav-stacked \""
     # presenter.list_tag_css = "nav nav-pills nav-stacked"
-    presenter.max_depth = 6
+    presenter.max_depth = 1
     first_css = :first
     last_css = :last
     presenter
@@ -60,7 +60,7 @@ module ApplicationHelper
     # presenter.css = "#{style}"
     presenter.list_tag = "ul class=\"nav nav-pills nav-stacked \""
     # presenter.list_tag_css = "nav nav-pills nav-stacked"
-    presenter.max_depth = 6
+    presenter.max_depth = 1
     first_css = :first
     last_css = :last
     presenter
