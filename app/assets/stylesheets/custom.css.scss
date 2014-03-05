@@ -210,6 +210,16 @@ a {color:$white;}
   }
 }
 
+.nav-pills li a {
+  border-bottom:1px solid lighten($black, 80%);
+  border-radius:0;
+  margin:-2px 0 0 0 !important;
+  font-size:18px;
+}
+
+.nav-pills li.last a {
+  border-bottom:1px solid transparent;
+}
 
 #footer {
   border-top:1px dotted lighten($black, 83%);
@@ -221,6 +231,9 @@ a {color:$white;}
   list-style:none;
 
 } 
+  a {
+    color:darken($lime, 20%);
+  }
 
 #copyright {
   color:lighten($black, 70%);
