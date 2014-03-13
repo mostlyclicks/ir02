@@ -1,10 +1,4 @@
-<div class="container">
-  <div id="l2-logo">
-    <div class="col-md-2 col-sm-2 col-xs-3">
-      <%= link_to (image_tag 'logo6.png', class: 'img-responsive'), root_path %>
-    </div>
-</div>
-</div>
+<%= render 'refinery/shared/logo' %>
 
 
 <div class="container" id="l2">
@@ -26,7 +20,8 @@
     <div class="col-md-4">
       <div class="home-quote no-top-margin">
         <blockquote>
-          “What was unusable acreage is now thriving and profitable thanks to the work of Integrated Restorations.“ <br /><em>&mdash; John Smith, Smith Developments</em>
+          <%= raw @random_testimonial.excerpt %><br />
+          &mdash; <em><%= @random_testimonial.name %></em>
         </blockquote>
       </div>
     </div>

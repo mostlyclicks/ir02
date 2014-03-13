@@ -13,7 +13,13 @@
       </div>
 
       <div class="col-md-4 col-sm-12 col-xs-12 home-quote">
-        <blockquote>“What was unusable acreage is now thriving and profitable thanks to the work of Integrated Restorations.“ <br /><em>&mdash; John Smith, Smith Developments</em></blockquote>
+        <blockquote>
+          <%= raw @random_testimonial.excerpt %><br />
+          &mdash; <em><%= @random_testimonial.name %></em>
+        </blockquote>
+
+
+       <!--  <blockquote>“What was unusable acreage is now thriving and profitable thanks to the work of Integrated Restorations.“ <br /><em>&mdash; John Smith, Smith Developments</em></blockquote> -->
       </div>
 
     </div>
