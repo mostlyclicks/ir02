@@ -7,5 +7,26 @@
     <% end %>
   </ul>
 <% end %>
-adafdf
-<%= render '/refinery/content_page' %>
+
+<%#= render '/refinery/content_page' %>
+<div class="container">
+  <div class="row">
+    <div class="col-md-8">
+      <div class="" style="">
+        <h1>Testimonials</h1>
+          <% @testimonials.each do |testimonial| %>
+          <blockquote class="l2-quote">
+            <%= raw testimonial.body %>
+            <span><%= testimonial.name %><%= ', ' + testimonial.job_title unless blank? %><br />
+              <small><%= testimonial.organization unless blank? %></small></span> 
+          </blockquote>
+        <% end %>
+      </div>
+    </div>
+
+
+  </div>
+
+
+</div>
+

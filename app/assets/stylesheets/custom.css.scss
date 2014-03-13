@@ -113,12 +113,53 @@ p {
   }
 }
 
+.l2-quote {
+    border-left:none;
+  letter-spacing: 1px;
+  background-color:#acd373;
+  margin-top:20px;
+  padding-bottom:20px;
+  margin-bottom:40px;
+  p {
+  font-family:$font-sans;
+  font-weight:100;
+  font-size:24px;
+  color:$black;
+  margin:0 !important;
+  padding:0 !important;
+  }
+  em {
+    // margin-top:-40px !important;
+    font-size:28px;
+    font-weight:200;
+    padding-top:0;
+  }
+  &:after {
+    content:url('bubblepoint.png');
+    display:block;
+    float:left;
+    margin-top:10px;
+    margin-left:10px;
+    @include rotate(12deg);
+  }
+  span {
+    display:block;
+    font-style: italic;
+    font-weight:700;
+    padding-top:1em;
+    small {
+      color:rgba(0,0,0,.4);
+    }
+  }
+
+}
+
 .home-quote blockquote {
   border-left:none;
   letter-spacing: 1px;
   background-color:#acd373;
   margin-top:20px;
-  padding-bottom:0;
+  padding-bottom:20px;
   // margin:0 !important;
   // padding:0 !important;
   p {
