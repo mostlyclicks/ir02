@@ -217,6 +217,20 @@ a {color:$white;}
   }
 }
 
+ul.products li {
+  line-height: 1.75em;
+  text-indent:0;
+  color:lighten($black, 50%);
+}
+
+ul.products li:before {    
+font-family: 'FontAwesome';
+list-style-position: inside;
+content: '\f054';
+margin:0 10px 0 -38px;
+color: $lime;
+}
+
 .nav-pills li a {
   border-bottom:1px dotted lighten($black, 80%);
   border-radius:0;
