@@ -50,7 +50,7 @@ gem 'refinerycms-inquiries', '~> 2.1.0'
 gem 'refinerycms-page-images', '~> 2.1.0'
 
 gem 'refinerycms-products', :path => 'vendor/extensions'
-gem 'refinerycms-employees', :path => 'vendor/extensions'
+#gem 'refinerycms-employees', :path => 'vendor/extensions'
 gem 'refinerycms-job_opportunities', :path => 'vendor/extensions'
 gem 'refinerycms-case_studies', :path => 'vendor/extensions'
 gem 'refinerycms-testimonials', :path => 'vendor/extensions'
