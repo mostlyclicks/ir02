@@ -9,9 +9,38 @@
 
   <div class="row">
     <div class="col-md-8">
-      <% @page.images.each_with_index do |image, index| %>
-        <%= image_fu(image, '750x300c', class: 'img-responsive') %>
-      <% end %>
+      <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          
+          <ol class="carousel-indicators">
+            <% @page.images.each_with_index do |image, index| %>
+            <li data-target="#carousel-example-generic" data-slide-to="<%= index %>" class="<% if index == 0 %>active<% end %>"></li>
+            <% end %>
+          </ol>
+
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner">
+            <% @page.images.each_with_index do |image, index| %>
+            <div class=" item <% if index == 0 %>active<% end %>">
+              <%= image_fu(image, '750x300c', class: 'img-responsive') %>
+            </div>
+            <% end %>
+          </div>
+          
+  <!-- Controls -->
+          <a class="left carousel-control hidden-xs" href="#carousel-example-generic" data-slide="prev">
+            <span class="fa fa-chevron-left" style="position:absolute;top:47%;"></span>
+          </a>
+          <a class="right carousel-control hidden-xs" href="#carousel-example-generic" data-slide="next">
+            <span class="fa fa-chevron-right" style="position:absolute;top:47%;"></span>
+          </a>
+        </div>
+
+
+
+      <%# @page.images.each_with_index do |image, index| %>
+        <%#= image_fu(image, '750x300c', class: 'img-responsive') %>
+      <%# end %>
       <%= @page.content_for(:body).html_safe %>
     </div>
 
@@ -29,4 +58,3 @@
 
   </div>  
 </div>
-
