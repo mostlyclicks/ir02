@@ -9,7 +9,10 @@
 
   <div class="row">
     <div class="col-md-8">
-      <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+      <% if @page.images.empty? %>
+        <%= @page.content_for(:body).html_safe %>
+      <% else %>
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
           <!-- Indicators -->
           
           <ol class="carousel-indicators">
@@ -27,7 +30,7 @@
             <% end %>
           </div>
           
-  <!-- Controls -->
+          <!-- Controls -->
           <a class="left carousel-control hidden-xs" href="#carousel-example-generic" data-slide="prev">
             <span class="fa fa-chevron-left" style="position:absolute;top:47%;"></span>
           </a>
@@ -36,12 +39,15 @@
           </a>
         </div>
 
+      <% end %>
+
+
 
 
       <%# @page.images.each_with_index do |image, index| %>
         <%#= image_fu(image, '750x300c', class: 'img-responsive') %>
       <%# end %>
-      <%= @page.content_for(:body).html_safe %>
+      
     </div>
 
     <div class="col-md-4">
