@@ -21,7 +21,7 @@
           <div class="carousel-inner">
             <% @case_study.images.each_with_index do |image, index| %>
             <div class=" item <% if index == 0 %>active<% end %>">
-              <%= image_fu(image, '750x300c', class: 'img-responsive') %>
+              <%= image_fu(image, '750x400c', class: 'img-responsive') %>
               <div class="caption"><%=raw @case_study.caption_for_image_index(index) %></div>
             </div>
             
