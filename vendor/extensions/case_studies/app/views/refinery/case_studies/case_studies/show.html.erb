@@ -1,12 +1,35 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-8">
+      <h2><%=raw @case_study.title %></h2>
+      <%= "<small>#{@case_study.client}</small>" unless @case_study.client.empty? %>
+      <%=raw @case_study.description %>
+    </div>
+    <div class="col-md-4">
+      <% if @case_study.testimonial? %>
+        <div class="home-quote top-margin">
+          <blockquote>
+            <%=raw @case_study.testimonial %>
+          </blockqout>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>
+
+
+
+
+
 <% content_for :body_content_title do %>
-  <%= @case_study.title %>
+  <%#= @case_study.title %>
 <% end %>
 
 <% content_for :body do %>
   <section>
     <h1>Title</h1>
     <p>
-      <%=raw @case_study.title %>
+      <%#=raw @case_study.title %>
     </p>
   </section>
   <section>
@@ -18,7 +41,7 @@
   <section>
     <h1>Testimonial</h1>
     <p>
-      <%=raw @case_study.testimonial %>
+      
     </p>
   </section>
   <section>
@@ -42,7 +65,7 @@
   <section>
     <h1>Description</h1>
     <p>
-      <%=raw @case_study.description %>
+      <%#=raw @case_study.description %>
     </p>
   </section>
   <section>
@@ -60,10 +83,11 @@
 <% content_for :side_body do %>
   <aside>
     <h2><%= t('.other') %></h2>
+    <% @current_case_study = @case_study %>
     <ul id="case_studies">
       <% @case_studies.each do |case_study| %>
         <li>
-          <%= link_to case_study.title, refinery.case_studies_case_study_path(case_study) %>
+          <%= link_to case_study.title, refinery.case_studies_case_study_path(case_study) unless @current_case_study == case_study %>
         </li>
       <% end %>
     </ul>
