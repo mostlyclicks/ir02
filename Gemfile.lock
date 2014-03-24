@@ -3,6 +3,7 @@ PATH
   specs:
     refinerycms-case_studies (1.0)
       refinerycms-core (~> 2.1.1)
+      refinerycms-page-images (~> 2.1.0)
     refinerycms-job_opportunities (1.0)
       refinerycms-core (~> 2.1.1)
     refinerycms-products (1.0)

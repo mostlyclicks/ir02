@@ -2,17 +2,80 @@
   <div class="row">
     <div class="col-md-8">
       <h2><%=raw @case_study.title %></h2>
+
+      <% if @case_study.images.empty? %>
+        <%= "<small>#{@case_study.client}</small>" unless @case_study.client.empty? %>
+        <%=raw @case_study.description %>
+      <% else %>
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel"><!-- class="" -->
+          <!-- Indicators -->
+          <% if @case_study.images.size > 1 %>
+          <ol class="carousel-indicators" style="top:10px;">
+            <% @case_study.images.each_with_index do |image, index| %>
+            <li data-target="#carousel-example-generic" data-slide-to="<%= index %>" class="<% if index == 0 %>active<% end %>"></li>
+            <% end %>
+          </ol>
+          <% end %>
+
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner">
+            <% @case_study.images.each_with_index do |image, index| %>
+            <div class=" item <% if index == 0 %>active<% end %>">
+              <%= image_fu(image, '750x300c', class: 'img-responsive') %>
+              <div class="caption"><%=raw @case_study.caption_for_image_index(index) %></div>
+            </div>
+            
+            <% end %>
+          </div>
+          
+          <!-- Controls -->
+          <% if @case_study.images.size > 1 %>
+          <a class="case_study left carousel-control hidden-xs" href="#carousel-example-generic" data-slide="prev">
+            <span class="fa fa-chevron-left" style="position:absolute;top:47%;"></span>
+          </a>
+          <a class="case_study right carousel-control hidden-xs" href="#carousel-example-generic" data-slide="next">
+            <span class="fa fa-chevron-right" style="position:absolute;top:47%;"></span>
+          </a>
+          <% end %>
+        </div>
+
+      <% end %>
+
+
       <%= "<small>#{@case_study.client}</small>" unless @case_study.client.empty? %>
       <%=raw @case_study.description %>
     </div>
-    <div class="col-md-4">
+    <div class="col-md-4" style="margin-top:105px;">
       <% if @case_study.testimonial? %>
-        <div class="home-quote top-margin">
+        <div class="home-quote ">
           <blockquote>
             <%=raw @case_study.testimonial %>
           </blockqout>
         </div>
       <% end %>
+        <aside>
+    <h2><%= t('.other') unless @case_studies.size == 1 %></h2>
+    <% @current_case_study = @case_study %>
+    <ul id="case_studies">
+      <% @case_studies.each do |case_study| %>
+        <li>
+          <%= link_to case_study.title, refinery.case_studies_case_study_path(case_study) unless @current_case_study == case_study %>
+        </li>
+      <% end %>
+    </ul>
+  </aside>
+  <aside>
+        <p>
+      <% if @case_study.case_study_pdf.present? %>
+        <%= link_to "<i class='fa fa-file-o'></i> Download PDF".html_safe, @case_study.case_study_pdf.url %>
+      <% else %>
+        <h4><a href=""><i class="fa fa-file-o"></i> case_study_pdf</a></h4>
+      <% end %>
+    </p>
+
+  </aside>
+
+
     </div>
   </div>
 </div>
@@ -70,28 +133,12 @@
   </section>
   <section>
     <h1>Case Study Pdf</h1>
-    <p>
-      <% if @case_study.case_study_pdf.present? %>
-        <%= link_to 'case_study_pdf', @case_study.case_study_pdf.url %>
-      <% else %>
-        case_study_pdf
-      <% end %>
-    </p>
+
   </section>
 <% end %>
 
 <% content_for :side_body do %>
-  <aside>
-    <h2><%= t('.other') %></h2>
-    <% @current_case_study = @case_study %>
-    <ul id="case_studies">
-      <% @case_studies.each do |case_study| %>
-        <li>
-          <%= link_to case_study.title, refinery.case_studies_case_study_path(case_study) unless @current_case_study == case_study %>
-        </li>
-      <% end %>
-    </ul>
-  </aside>
+
 <% end %>
 
-<%= render '/refinery/content_page' %>
+<%#= render '/refinery/content_page' %>

@@ -14,6 +14,8 @@ module Refinery
       belongs_to :after_image, :class_name => '::Refinery::Image'
 
       belongs_to :case_study_pdf, :class_name => '::Refinery::Resource'
+
+      has_many_page_images
     end
   end
 end

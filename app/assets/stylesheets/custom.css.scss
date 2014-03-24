@@ -58,6 +58,22 @@ p {
   height:300px;
 }
 
+.case_study.carousel-control {
+  height:246px;
+
+}
+
+.caption {
+  margin-top:0px;
+  padding:0;
+  background-color:$gray;
+  font-family: 'Roboto Slab', serif;
+  p {
+    color:rgba(255,255,255,1) !important;
+    padding:10px;
+  }
+}
+
 
 #top {
   
