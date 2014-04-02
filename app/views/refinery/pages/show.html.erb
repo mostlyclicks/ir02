@@ -54,8 +54,7 @@
     <div class="col-md-4">
       <div class="home-quote no-top-margin">
         <blockquote>
-          <%= raw @random_testimonial.excerpt %><br />
-          &mdash; <em><%= @random_testimonial.name %></em>
+          <%= render '/refinery/shared/testimonials' %>
         </blockquote>
       </div>
       <div style="margin-top:50px;">

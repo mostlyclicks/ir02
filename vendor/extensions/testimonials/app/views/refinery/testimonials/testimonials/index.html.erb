@@ -16,7 +16,8 @@
     <div class="col-md-8">
       <div class="" style="">
         <h1>Testimonials</h1>
-          <% @testimonials.each do |testimonial| %>
+
+         <% @testimonials.each do |testimonial| %>
           <blockquote class="testimonial-page">
             <%= raw testimonial.body %>
             <span><%= testimonial.name %><%= ', ' + testimonial.job_title unless blank? %><br />
