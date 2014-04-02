@@ -9,8 +9,12 @@ $lime :#acd373;
 $trans-brand-green:rgba(29,131,12,.3);
 $black:#000000;
 
-h1, h2, h3 {
+h1, h2, h3, h5 {
   font-family:$font-main;
+}
+
+h5 {
+
 }
 
 p {
@@ -55,6 +59,7 @@ p {
  } 
 
  .navbar-brand {
+  text-shadow:none;
  }
 
 .top-content {
