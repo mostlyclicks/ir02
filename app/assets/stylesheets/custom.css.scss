@@ -44,6 +44,16 @@ p {
    margin-bottom:20px;
    box-shadow: 1px 0px 5px 1px rgba(0,0,0, .2);
  } 
+
+ #l2 img.products-img {
+   margin-top:25px;
+   background-color:rgba(150,150,150,.1);
+   box-shadow:none;
+   padding:20px;
+
+ 
+ } 
+
  .navbar-brand {
  }
 
@@ -303,7 +313,7 @@ ul.products li {
 ul.products li:before {    
 font-family: 'FontAwesome';
 list-style-position: inside;
-content: '\f054';
+content: '\f0da';
 margin:0 10px 0 -38px;
 color: $lime;
 }

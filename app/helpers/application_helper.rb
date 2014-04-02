@@ -23,18 +23,6 @@ module ApplicationHelper
     presenter
   end
 
-  # def sub_menu_pages(page)
-  #   Refinery::Menu.new(refinery_menu_pages.detect{ |item| item.original_id == page.id }.children)
-  # end
-
-  # def sub_menu_pages(page)
-  #   presenter = Refinery::Menu.new(refinery_menu_pages.detect{ |item| item.original_id == page.id}.children)
-  #   #presenter = Refinery::Pages::MenuPresenter.new(refinery_menu_pages.detect{ |item| item.original_id == page.id}.children)
-  #   presenter.menu_tag = "div class=\"collapse navbar-collapse\" id=\"main-nav-collapse\""
-  #   presenter.list_tag = "ul class=\"nav nav-pills\""
-  #   presenter.max_depth = 1
-  #   presenter
-  # end
 
   def sub_menu_pages
     sub_menu_items = Refinery::Menu.new(refinery_menu_pages.detect{ |item| item.original_id == @page.id }.children)

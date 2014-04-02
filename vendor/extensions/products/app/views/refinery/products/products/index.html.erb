@@ -25,29 +25,22 @@
     <div class="col-md-8">
       <% @products.each do |product| %>
         <%# if product.id % 2 != 0 %>
-          <div class="row">
-            <div class="col-md-4" style="margin-top:26px;">
-              <%= image_fu(product.prod_image, '300x250#c', class: 'img-responsive') %>
+          <div class="row" >
+            <div class="col-md-5">
+              <%= image_fu(product.prod_image, '500x', class: 'img-responsive products-img ') %>
             </div>
-            <div class="col-md-8">
+            <div class="col-md-7">
               <h2><%= product.name %></h2>
               <%= raw product.prod_description %>
+              
             </div>
 
           </div>
-        <%# else %>
-          <!-- <div class="row">
-            <div class="col-md-4" style="margin-top:25px;">
-              <%#= image_fu(product.prod_image, '300x250#c', class: 'img-responsive') %>
-            </div>
-            <div class="col-md-8">
-              <h2><%#= product.name %></h2>
-              <%#= raw product.prod_description %>
-            </div>
-          </div> -->
-          <%# end %>
+          
       <% end %>
     </div>
+
+
 
     <div class="col-md-4">
       <div class="home-quote no-top-margin">
