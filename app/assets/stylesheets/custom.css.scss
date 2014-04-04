@@ -291,7 +291,7 @@ a {color:$white;}
 }
 
 .carousel-control.left, .carousel-control.right {background-image:none !important;}
- 
+
 
 #l2 {
   padding-top:40px;
@@ -359,3 +359,7 @@ color: $lime;
   color:lighten($black, 70%);
 }
 
+.cs-sidebar {
+  background-color:rgba(185,185,185,.1);
+
+}
