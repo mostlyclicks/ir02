@@ -49,6 +49,7 @@ module ApplicationHelper
     presenter.list_tag = "ul class=\"nav nav-pills nav-stacked \""
     # presenter.list_tag_css = "nav nav-pills nav-stacked"
     presenter.max_depth = 1
+    presenter.selected_css = "active"
     first_css = :first
     last_css = :last
     presenter
