@@ -3,6 +3,11 @@
   <div class="row">
     <div class="col-md-8">
       <h2><%=raw @case_study.title %></h2>
+    </div>
+    <div class="col-md-4"></div>
+  </div>
+  <div class="row">
+    <div class="col-md-8">
 
       <% if @case_study.images.empty? %>
         <%= "<small>#{@case_study.client}</small>" unless @case_study.client.empty? %>
@@ -30,6 +35,12 @@
           </div>
           
           <!-- Controls -->
+
+          <style>
+
+
+
+          </style>
           <% if @case_study.images.size > 1 %>
           <a class="case_study left carousel-control hidden-xs" href="#carousel-example-generic" data-slide="prev">
             <span class="fa fa-chevron-left" style="position:absolute;top:47%;"></span>
@@ -46,35 +57,44 @@
       <%= "<small>#{@case_study.client}</small>" unless @case_study.client.empty? %>
       <%=raw @case_study.description %>
     </div>
-    <div class="col-md-4" style="margin-top:105px;">
+
+
+
+    <div class="col-md-4" style="padding:0;">
       <% if @case_study.testimonial? %>
-        <div class="home-quote ">
+        <div class="home-quote" style="margin-bottom:40px;">
           <blockquote>
             <%=raw @case_study.testimonial %>
-          </blockqout>
+          </blockqoute>
         </div>
       <% end %>
-        <aside>
-    <h2><%= t('.other') unless @case_studies.size == 1 %></h2>
-    <% @current_case_study = @case_study %>
-    <ul id="case_studies">
-      <% @case_studies.each do |case_study| %>
-        <li>
-          <%= link_to case_study.title, refinery.case_studies_case_study_path(case_study) unless @current_case_study == case_study %>
-        </li>
-      <% end %>
-    </ul>
-  </aside>
-  <aside>
-        <p>
-      <% if @case_study.case_study_pdf.present? %>
-        <%= link_to "<i class='fa fa-file-o'></i> Download PDF".html_safe, @case_study.case_study_pdf.url %>
-      <% else %>
-        <h4>&nbsp;</h4>
-      <% end %>
-    </p>
 
-  </aside>
+      <aside>
+        <h2><%= t('.other') unless @case_studies.size == 1 %></h2>
+        <% @current_case_study = @case_study %>
+        <ul id="case_studies">
+          <% @case_studies.each do |case_study| %>
+            <li>
+              <%= link_to case_study.title, refinery.case_studies_case_study_path(case_study) unless @current_case_study == case_study %>
+            </li>
+          <% end %>
+        </ul>
+      </aside>
+
+
+      <% if @case_study.case_study_pdf.present? %>
+        <%= button_to "Download PDF".html_safe, @case_study.case_study_pdf.url, class: 'btn btn-block btn-primary' %>
+      <% end %>
+   
+
+      <% unless @page.content_for(:research_papers).empty? %>
+        <div style="margin-top:10px;">
+          <h3>Research Papers</h3>
+          <%= raw @page.content_for(:research_papers) %>
+        </div>
+      <% end %>
+
+   
 
 
     </div>

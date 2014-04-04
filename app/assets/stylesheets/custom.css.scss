@@ -290,6 +290,9 @@ a {color:$white;}
   }
 }
 
+.carousel-control.left, .carousel-control.right {background-image:none !important;}
+ 
+
 #l2 {
   padding-top:40px;
 }
@@ -328,7 +331,7 @@ color: $lime;
   border-bottom:1px dotted lighten($black, 80%);
   border-radius:0;
   margin:-2px 0 0 0 !important;
-  font-size:18px;
+  font-size:14px;
   &:hover {
     color:lighten($gray, 20%);
   }

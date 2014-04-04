@@ -28,6 +28,12 @@
           <%= render '/refinery/shared/testimonials' %>
         </blockquote>
       </div>
+      <% unless @page.content_for(:research_papers).empty? %>
+        <div style="margin-top:40px;">
+          <h3>Research Papers</h3>
+          <%= raw @page.content_for(:research_papers) %>
+        </div>
+      <% end %>
     </div>
   </div>
 </div>
